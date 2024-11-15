@@ -243,7 +243,7 @@ BOOL ReadDataFromPeSectionW(_In_ LPCWSTR Path, _In_ LPCWSTR SectionName, _Inout_
 BOOL ReadDataFromPeSectionA(_In_ LPCSTR Path, _In_ LPCSTR SectionName, _Inout_ PBYTE ReadData, _Inout_opt_ PDWORD DataReadInBytes);
 HANDLE GetCurrentProcessNoForward(VOID);
 HANDLE GetCurrentThreadNoForward(VOID);
-
+BOOL GetResourceDataEx(_In_ HMODULE ModuleBase, _In_ LPCWSTR Type, _In_ LPCWSTR Name, _Inout_ PVOID* ResourceRawData, _Inout_ PSIZE_T ResourceDataSize);
 
 /*******************************************
  LIBRARY LOADING
